@@ -1,44 +1,37 @@
 ```markdown
-# Template A: Retail "Sprinting" Strategy
+# 🚀 Template A: Retail "Sprinting" Strategy
 
-> **PROPRIETARY & CONFIDENTIAL** > Authorized for commercial use exclusively by Maio Digital Marketing Agency.
+> **MAIO PROPRIETARY ASSET**
+> Authorized for commercial use exclusively by Maio Digital Marketing Agency.
 
-## 🎯 Overview
-This is the **Retail & Physical Storefront** proposal template. It is designed to pitch a hybrid digital marketing strategy focusing on two pillars: TikTok Engagement (Brand Awareness) and Google Business Profile / Maps Optimization (Hyperlocal Intent).
-
-## 🎨 Design System & Visual Style
-- **Aesthetic:** "Innovation & High Tech yet Down to Earth".
-- **Color Palette:** Warm Sandstone/Cream background (grounded) contrasted with Cyber Mint (`#A7F3D0`) and Deep Moss Green accents.
-- **Motifs:** Subtle 8-bit pixel art elements, glowing aura overlays, and dynamic motion blur.
-- **Mascot Integration:** Built to utilize the Maio "Digital Operator" robotic octopus mascot. The UI is pre-configured with a state-swapping mechanism via Framer Motion to seamlessly transition the mascot through 3 dynamic states (Warm-up -> Running -> Sprinting) based on the client's budget selection.
-
-## 🛠 Tech Stack
-This template is a modern Single Page Application (SPA) built for extreme speed and fluid animations, ready for Google Cloud Run deployment:
-- **Framework:** React 18 + TypeScript
-- **Build Tool:** Vite
-- **Styling:** Tailwind CSS (Utility-first, heavily customized for pixel borders and drop-shadows)
-- **Animation Engine:** Framer Motion (Orchestrating the Configurator tier swaps and scroll reveals)
-- **Iconography:** Lucide React & React Icons (Simple Icons for TikTok/Google Maps)
-
-## 🤖 Agent Injection Points (Developer Notes)
-For the Maio Developer CLI Agent, the following components inside `src/App.tsx` are marked for dynamic injection:
-1. `Client_Name` (Header Navigation)
-2. `Base_Pricing_Tiers` (The Configurator state logic)
-3. `Hero_Image_Src` (Located in the `public` directory, dynamically linked)
-4. `Mascot_State_Images` (Poses 1, 2, and 3 loaded dynamically from the `public` directory)
-5. `WhatsApp_Number` (CTA Button logic)
-
-## 🚀 Local Development
-To run this template locally for manual edits:
-```bash
-# Install dependencies
-npm install
-
-# Start the local development server
-npm run dev
-
-# Build for production
-npm run build
+## 🎯 Strategic Overview
+This is a high-conversion **Retail & Physical Storefront** proposal. It pitches a hybrid digital strategy: **TikTok Engagement** for awareness and **Google Business Profile** for hyperlocal foot traffic.
 
 ---
 
+## 🎨 Design System & Aesthetic
+* **Theme:** "Innovation & High Tech yet Down to Earth".
+* **Colors:** Sandstone Background | Cyber Mint (`#A7F3D0`) | Deep Moss Green.
+* **Visuals:** 8-bit pixel decorations, dynamic glowing auras, and motion blur.
+* **Interactive Mascot:** Integrated with Maio's robotic octopus. Features **3-State Animation** (Warm-up → Running → Sprinting) triggered by the Configurator's budget slider.
+
+## 🛠 Tech Stack (Production Ready)
+Built for extreme speed and fluid 60fps animations:
+* **Engine:** React 18 + TypeScript (Vite)
+* **Styling:** Tailwind CSS (Custom Pixel-Art Utilities)
+* **Motion:** Framer Motion (State-based transitions)
+* **Icons:** Lucide React & Simple Icons
+
+## 🤖 Agent Injection Points (ADK 2.0 / CLI)
+The following variables in `src/App.tsx` are pre-formatted for Agentic data injection:
+* `{Client_Name}` - Dynamic header brand.
+* `{Base_Pricing_Tiers}` - Logic for the 15M, 30M, and 45M tiers.
+* `{Hero_Image_Src}` - Local path to the generated urban runner asset.
+* `{Mascot_State_Images}` - Mapping for the 3 transparent PNG/WebP states.
+
+---
+
+## 💻 Local Development
+```bash
+npm install
+npm run dev
