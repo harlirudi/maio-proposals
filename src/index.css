@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Press+Start+2P&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Lexend", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-pixel: "Press Start 2P", monospace;
+  --color-moss: #2E4A3F;
+  --color-sandstone: #F2EEE5;
+  --color-mint: #A7F3D0;
+}
+
+html, body {
+  @apply bg-sandstone text-moss font-sans;
+  scroll-behavior: smooth;
+}
+
+.pixel-border {
+  clip-path: polygon(
+    0 10px, 10px 10px, 10px 0,
+    calc(100% - 10px) 0, calc(100% - 10px) 10px, 100% 10px,
+    100% calc(100% - 10px), calc(100% - 10px) calc(100% - 10px), calc(100% - 10px) 100%,
+    10px 100%, 10px calc(100% - 10px), 0 calc(100% - 10px)
+  );
+  border: 4px solid var(--color-mint);
+  /* Use box shadow to create the pixelated corners effect */
+  box-shadow: 
+    inset 0 0 15px rgba(167, 243, 208, 0.4),
+    0 0 15px rgba(167, 243, 208, 0.4);
+}
+
+.pixel-card {
+  box-shadow: 
+    4px 0 var(--color-moss),
+    -4px 0 var(--color-moss),
+    0 -4px var(--color-moss),
+    0 4px var(--color-moss),
+    0 0 20px rgba(167,243,208,0.5);
+  margin: 4px;
+}
